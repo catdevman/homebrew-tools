@@ -5,20 +5,20 @@
 class Gitgrove < Formula
   desc "Task-scoped git worktree workspaces for AI coding tools"
   homepage "https://github.com/catdevman/gitgrove"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/catdevman/gitgrove/releases/download/v0.6.0/gitgrove_darwin_amd64.tar.gz"
-      sha256 "d28708ef629cdb6883fb4e899f86eafb7d533a0b142ee145e8b98e60a6e98bf5"
+      url "https://github.com/catdevman/gitgrove/releases/download/v0.7.0/gitgrove_darwin_amd64.tar.gz"
+      sha256 "5b395f07082505515139282c0abc28814255b1ffbd16df5fbe8adbfdf4dff23a"
 
       define_method(:install) do
         bin.install "gitgrove"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/catdevman/gitgrove/releases/download/v0.6.0/gitgrove_darwin_arm64.tar.gz"
-      sha256 "e1b869e9bc7267649c9ec97cd48842456e8d8de1684e8b86d1b45c0b28c6072c"
+      url "https://github.com/catdevman/gitgrove/releases/download/v0.7.0/gitgrove_darwin_arm64.tar.gz"
+      sha256 "369d11c99a7183f259b900883517967f864efbfed088d4f68c7ac7ab763f22b7"
 
       define_method(:install) do
         bin.install "gitgrove"
@@ -28,15 +28,15 @@ class Gitgrove < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/catdevman/gitgrove/releases/download/v0.6.0/gitgrove_linux_amd64.tar.gz"
-      sha256 "55b46e4a0e0b87692b96a7e5c7b54b16c22c85455c90bdff675b4459491d615f"
+      url "https://github.com/catdevman/gitgrove/releases/download/v0.7.0/gitgrove_linux_amd64.tar.gz"
+      sha256 "368294fa9432bffe5834101b2aa5139e126e37e022e89bbe1f03dcac0174e6a0"
       define_method(:install) do
         bin.install "gitgrove"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/catdevman/gitgrove/releases/download/v0.6.0/gitgrove_linux_arm64.tar.gz"
-      sha256 "d562dc9be8e63630f5ff082521f14d11f6f724f292ca96c12668b830c028a324"
+      url "https://github.com/catdevman/gitgrove/releases/download/v0.7.0/gitgrove_linux_arm64.tar.gz"
+      sha256 "2bf3f7db6667557c7055415e5ee4718194321fe0199265401fdd9fc123f580fb"
       define_method(:install) do
         bin.install "gitgrove"
       end
