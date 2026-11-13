@@ -5,21 +5,21 @@
 class Sfnlocal < Formula
   desc "Local AWS Step Functions server"
   homepage "https://github.com/catdevman/sfn-local"
-  version "0.0.3"
+  version "0.0.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/catdevman/sfn-local/releases/download/v0.0.3/sfnlocal_0.0.3_darwin_amd64.tar.gz"
-      sha256 "f370783d25191a46b768b2c03eb515b171fbd7ed38603e86fc3773def289bbd9"
+      url "https://github.com/catdevman/sfn-local/releases/download/v0.0.4/sfnlocal_0.0.4_darwin_amd64.tar.gz"
+      sha256 "5cb953ea78ddbee41db02aa8269b54865443feed852cc53b6b56becc01f97f38"
 
       define_method(:install) do
         bin.install "sfnlocal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/catdevman/sfn-local/releases/download/v0.0.3/sfnlocal_0.0.3_darwin_arm64.tar.gz"
-      sha256 "cedcfc1b1db66461add6efdc4b86329ca6607c98801978f4191c2e25a9b82851"
+      url "https://github.com/catdevman/sfn-local/releases/download/v0.0.4/sfnlocal_0.0.4_darwin_arm64.tar.gz"
+      sha256 "764ead482eaf377fe3877c40606c83b13e9086b45cfb3453a84ef6db90911eba"
 
       define_method(:install) do
         bin.install "sfnlocal"
@@ -29,15 +29,15 @@ class Sfnlocal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/catdevman/sfn-local/releases/download/v0.0.3/sfnlocal_0.0.3_linux_amd64.tar.gz"
-      sha256 "7ed20bee6b4545c76197fcc4e20731b3b9d4a0704325f4e61ad90c51288c928f"
+      url "https://github.com/catdevman/sfn-local/releases/download/v0.0.4/sfnlocal_0.0.4_linux_amd64.tar.gz"
+      sha256 "8c03a7dbff2b689bbbb656732537fdf66b23e20d5d72b38ed3ff4a6c55b13987"
       define_method(:install) do
         bin.install "sfnlocal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/catdevman/sfn-local/releases/download/v0.0.3/sfnlocal_0.0.3_linux_arm64.tar.gz"
-      sha256 "001ef929526ed9c3f2a50d9d0543cfba2097d24def893044cb0026c3d3fb39b8"
+      url "https://github.com/catdevman/sfn-local/releases/download/v0.0.4/sfnlocal_0.0.4_linux_arm64.tar.gz"
+      sha256 "375cdb47ecd96e2987948e015a94afd70f206e69db4a7797e9afb375e9058ae3"
       define_method(:install) do
         bin.install "sfnlocal"
       end
